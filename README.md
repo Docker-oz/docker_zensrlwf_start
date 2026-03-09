@@ -15,17 +15,17 @@ Para arrancar el servidor de desarrollo por primera vez o después de modificar 
 
 ```bash
 # Construye la imagen y levanta el servicio en segundo plano (detached)
-docker compose -f docker_compose_zensrlwf_start.yml.yml up -d --build
+docker compose -f docker_compose_zensrlwf_start.yml up -d --build
 ````
 
 ```bash
 # Detiene la ejecución pero mantiene el contenedor creado
-docker compose -f docker_compose_zensrlwf_start.yml.yml stop
+docker compose -f docker_compose_zensrlwf_start.yml stop
 ```
 
 ```bash
 # Baja el entorno y elimina imágenes asociadas y volúmenes
-docker compose -f docker_compose_zensrlwf_start.yml.yml down --rmi all --volumes
+docker compose -f docker_compose_zensrlwf_start.yml down --rmi all --volumes
 ```
 
 ```bash
@@ -33,5 +33,5 @@ docker compose -f docker_compose_zensrlwf_start.yml.yml down --rmi all --volumes
 docker logs -f docker_compose_zensrlwf_start.yml
 
 # Listar el estado del contenedor para verificar si está corriendo (Up)
-docker ps -a --filter "name=docker_compose_zensrlwf_start.yml"
+docker ps -a --filter "name=docker_compose_zensrlwf-start"
 ```
