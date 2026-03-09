@@ -1,0 +1,8 @@
+services:
+  docs:
+    build: .
+    container_name: docker_compose_zensrlwf-start
+    ports:
+      - "8080:8000"  # Cambia el puerto del host de 8000 a 8080
+    volumes:
+      - .:/app

@@ -3,8 +3,8 @@
 Este documento centraliza los comandos necesarios para gestionar el ciclo de vida del contenedor de documentación de **Self Service - Courses**, utilizando la configuración personalizada de este repositorio.
 
 ## 📋 Información de Configuración
-* **Archivo de Orquestación:** `docker_compose_zensical-srlwf.yml`
-* **Nombre del Contenedor:** `docker_compose_srlwf-zensical`
+* **Archivo de Orquestación:** `docker_compose_zensrlwf_start`
+* **Nombre del Contenedor:** `docker_compose_zensrlwf-start`
 * **Imagen Base:** `python:3.11-slim` (con Zensical preinstalado)
 * **Puerto de Acceso:** `8000`
 
@@ -15,23 +15,23 @@ Para arrancar el servidor de desarrollo por primera vez o después de modificar 
 
 ```bash
 # Construye la imagen y levanta el servicio en segundo plano (detached)
-docker compose -f docker_compose_zensical-srlwf.yml up -d --build
+docker compose -f docker_compose_zensrlwf_start.yml.yml up -d --build
 ````
 
 ```bash
 # Detiene la ejecución pero mantiene el contenedor creado
-docker compose -f docker_compose_zensical-srlwf.yml stop
+docker compose -f docker_compose_zensrlwf_start.yml.yml stop
 ```
 
 ```bash
 # Baja el entorno y elimina imágenes asociadas y volúmenes
-docker compose -f docker_compose_zensical-srlwf.yml down --rmi all --volumes
+docker compose -f docker_compose_zensrlwf_start.yml.yml down --rmi all --volumes
 ```
 
 ```bash
 # Ver los logs del contenedor en tiempo real
-docker logs -f docker_compose_srlwf-zensical
+docker logs -f docker_compose_zensrlwf_start.yml
 
 # Listar el estado del contenedor para verificar si está corriendo (Up)
-docker ps -a --filter "name=docker_compose_srlwf-zensical"
+docker ps -a --filter "name=docker_compose_zensrlwf_start.yml"
 ```
