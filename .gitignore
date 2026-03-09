@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Docker y Logs
+*.log
+.docker/
+
+# Zensical / Static Site
+node_modules/
+dist/
+build/
+.cache/
+
+# Otros
+.env

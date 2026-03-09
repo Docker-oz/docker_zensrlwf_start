@@ -1,0 +1,50 @@
+/* Justificación global de párrafos */
+* {
+  --md-text-align: justify;
+}
+
+p {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  hyphens: auto !important;
+  word-break: break-word !important;
+}
+
+.md-typeset p {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  hyphens: auto !important;
+}
+
+.md-content__inner.md-typeset p {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  hyphens: auto !important;
+}
+
+article.md-typeset p {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  hyphens: auto !important;
+}
+
+.md-content__inner.md-typeset {
+  text-align: justify !important;
+}
+
+/* Estilos para bibliografías con sangría francesa */
+.md-typeset ol {
+  list-style-position: outside !important;
+  padding-left: 2em !important;
+}
+
+.md-typeset ol li {
+  margin-left: -1.5em !important;
+  padding-left: 1.5em !important;
+  text-align: justify !important;
+}
+
+.md-typeset ol li p {
+  display: inline !important;
+  margin: 0 !important;
+}
