@@ -13,3 +13,13 @@ build/
 
 # Otros
 .env
+
+# Carpeta de salida de MkDocs / Zensical
+site/
+
+# Archivos temporales de Docker
+.docker/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
