@@ -532,10 +532,6 @@
 <p>Antes de diseñar clases o cursos, debemos tener muy en cuenta la manera en que construimos nuestro aprendizaje. No obstante, quiero hacer una aclaración: por ningún motivo pretendo decir que lo compartido en estas líneas sea la única forma de poder dar buenas clases o cursos, ni mucho menos la panacea para los modelos instruccionales de cursos. Es, simplemente, un punto de vista muy particular basado en lo que me ha dado resultado en el contenido de mis capacitaciones.</p>
 <p>La mente no es solo un receptor pasivo de información, sino un sistema que busca activamente construir modelos mentales.</p>
 <p><strong>¿Qué es un modelo mental?</strong> De acuerdo con Wilson () es una representación simplificada de un dominio de problemas que permite razonar y resolver situaciones, aunque no sea técnicamente perfecta (como imaginar átomos como bolas y resortes). Dicho de otra manera, es un truco que usa tu cerebro para entender algo muy complejo sin tener que saber cada detalle técnico. No es la verdad absoluta, pero funciona para resolver problemas rápidos. Por eso, el desafío más delicado no es transmitir datos, sino construir una estructura donde esos datos vivan: los novatos no tienen un modelo mental denso; los expertos, sí.</p>
-<div class="admonition quote">
-<p class="admonition-title">()</p>
-<p>El modelo de Dreyfus no es la "versión resumida" de Benner. Más bien, el marco académico complejo (tanto las 5 etapas de Benner como las del modelo de Dreyfus) se convierten en una herramienta operativa de tres niveles (Novato, Practicante Competente y Experto) para facilitar la labor del docente o facilitador.</p>
-</div>
 <h3 id="221-gestion-de-la-carga-cognitiva">2.2.1 Gestión de la Carga Cognitiva</h3>
 <p>La <strong>Máquina Nocional</strong> es, desde mi perspectiva como facilitador, la herramienta más crítica para desmitificar la programación para los novatos o para aprender algo que impliqca utilizar un lenguaje de programación. Más que una lección técnica, representa el andamiaje psicológico indispensable para el aprendizaje.</p>
 <p>El éxito de esta herramienta radica en cómo se gestiona la fisiología de la mente. Mientras que la <strong>Memoria a Largo Plazo</strong> ofrece un almacenamiento masivo pero lento, la <strong>Memoria a Corto Plazo</strong> es un cuello de botella rápido pero pequeño. La información (visual o verbal) solo se vuelve conocimiento si logra cruzar de una a otra sin causar una sobrecarga.</p>
@@ -563,7 +559,7 @@
     <span class="n">total_acumulado</span> <span class="o">+=</span> <span class="n">p</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El total es: </span><span class="si">{</span><span class="n">total_acumulado</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p><em>Mientras el experto ve un solo "trozo" o </em><em>chunk (patrón de acumulador),</em><em> el novato, que aún no tiene modelos mentales funcionales, procesa cada carácter de forma aislada, llenando sus 7±2 espacios de memoria de trabajo en segundos:</em></p>
+<p><em>Mientras el experto ve un solo "trozo" o </em><strong>chunk</strong><em> el novato, que aún no tiene modelos mentales funcionales, procesa cada carácter de forma aislada, llenando sus 7±2 espacios de memoria de trabajo en segundos:</em></p>
 <ol>
 <li><strong>Sintaxis de Listas:</strong> Los corchetes <strong><code>[]</code></strong> para definir una colección.</li>
 <li><strong>Tipos de Datos:</strong> La diferencia entre enteros y flotantes (el uso del punto decimal).</li>
@@ -579,64 +575,74 @@
 <p><em>Al respetar el límite del 7±2, transformamos una pila inmanejable de hechos en un modelo mental sólido y funcional</em></p>
 <h3 id="221-gestion-de-la-carga-cognitiva_1">2.2.1 Gestión de la Carga Cognitiva</h3>
 <p>Siguiendo la premisa de Wilson (), <em>“el conocimiento no se transfiere de forma pasiva”</em>; no se trata simplemente de “vaciar” información en la mente del estudiante. Por el contrario, debemos facilitar la construcción de modelos mentales efectivos y, específicamente, de una <strong>máquina nocional</strong> sólida que les permita razonar por sí mismos.</p>
-<p>En el siguiente ejemplo propone la construcción de una máquina nocional, para acercar a un grupo de estudiantes novatos a los conceptos <em>“Geoespaciales utilizando R”,</em> de manera estructurada y secuencial apoyada de recursos estratégicos para abordarla.</p>
+<p>En el siguiente ejemplo se propone la construcción de una máquina nocional, para acercar a un grupo de estudiantes novatos a los conceptos <em>“Geoespaciales utilizando R”,</em> de manera estructurada y secuencial apoyada de recursos estratégicos para abordarla.</p>
 <ol>
-<li><strong>El primer paso es establecer nuestros cimientos (objetivo)</strong><br />
-<em>Deseo introducir conceptos geoespaciales a un grupo de estudiantes novatos dentro de un curso de R. Mi objetivo es construir una </em><em>máquina nocional</em><em> que les permita responder: ¿Qué son los datos geoespaciales? y ¿Cómo interviene R en su procesamiento?.</em>
-    <em>¿Cuál sería el nivel de abstracción más recomendable para este primer acercamiento, considerando que debo evitar la sobrecarga cognitiva y fomentar la creación de un modelo mental sólido desde el inicio?".</em>  </li>
-</ol>
+<li>
+<p><strong>El primer paso es establecer nuestros cimientos (el objetivo)</strong><br />
+<em>Introducir conceptos geoespaciales a un grupo de estudiantes novatos dentro de un curso de R, apoyandonos de una </em><em>máquina nocional</em><em> que les permita responder: ¿Qué son los datos geoespaciales? y ¿Cómo interviene R en su procesamiento?.</em>
+    <em>¿Cuál sería el nivel de abstracción más recomendable para este primer acercamiento, considerando que debo evitar la sobrecarga cognitiva y fomentar la creación de un modelo mental sólido desde el inicio?".</em>  </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Debemos resistir la tentación de empezar con la sintaxis del código. Primero debemos instalar en sus mentes la Máquina Nocional: el modelo mental simplificado de cómo la computadora y R perciben el espacio.  </p>
 </div>
-<ol>
+</li>
 <li>
 <p><strong>Instalación de la Máquina nocional</strong><br />
-    Para un novato, el nivel de abstracción más efectivo es una <strong>"Caricatura Funcional"</strong> de la realidad (Wilson). No debemos enseñarles sobre bits, ni formatos de archivo complejos (como la estructura interna de un Shapefile), ni sobre cómo R gestiona la memoria física. El nivel propuesto es el siguiente: <em>"El Mapa como Estructura de Datos”</em>.<br />
-<strong><em>La abstracción debe ser:</em></strong></p>
+    Para un novato, el nivel de abstracción más efectivo es una <strong>"Caricatura Funcional"</strong> de la realidad (Wilson). No debemos enseñarles sobre bits, ni formatos de archivo complejos (como la estructura interna de un Shapefile), ni sobre cómo R gestiona la memoria física. El modelo mental propuesto es <strong><em>"El Mapa como Estructura de Datos”</em></strong>, y su abstracción podría ser la siguiente:</p>
 <ul>
-<li><em><strong>El Mundo es una Malla o un Dibujo:</strong> La computadora no "ve" un mapa; ve una matriz de números (Ráster) o una lista de coordenadas matemáticas (Vector).</em></li>
-<li><em><strong>R es el Traductor:</strong> R toma esas listas de números y las "pinta" en la pantalla capa por capa.</em></li>
-<li><strong><em>Estado en Memoria:</em>* Los mapas en R son </strong>objetos*<em> variables que viven en la memoria temporal RAM (Introduce to R to Geospatial Concepts).</em></li>
+<li><strong><em>El Mundo es una Malla o un Dibujo:</em></strong> La computadora no "ve" un mapa; ve una matriz de números (Ráster) o una lista de coordenadas matemáticas (Vector).</li>
+<li><strong><em>R es el Traductor:</em></strong> R toma esas listas de números y las "pinta" en la pantalla capa por capa.</li>
+<li><strong><em>Estado en Memoria:</em></strong> Los mapas en R son objetos variables que viven en la memoria temporal RAM.</li>
 </ul>
 </li>
 <li>
 <p><strong>Máquina nocional</strong><br />
     Evitamos la carga cognitiva y dividimos esta máquina en dos partes: <strong>la primera parte para hablar de </strong><em>“¿qué son los datos geoespaciales?”</em><strong> y la segunda para hablar de </strong><em>“¿qué tiene que ver R en todo esto?”</em><em>:</em>  </p>
-<p><strong>Máquina nocional parte A</strong>: <em>¿Qué son los Datos Geoespaciales?</em></p>
-<p>Para explicar esto, utilizaremos la analogía de <em>"Píxeles vs. Trazos"</em>, apoyada en las definiciones de fuentes confiables.</p>
+<ul>
+<li>
+<p><strong>Máquina nocional parte A</strong>: <em>¿Qué son los Datos Geoespaciales?</em> Para explicar esto, utilizaremos la analogía de <em>"Píxeles vs. Trazos"</em> y su marco en común, apoyada en las definiciones de fuentes confiables.</p>
 <ol>
-<li><em>Datos Ráster: La Matriz Pixelada</em></li>
-<li><em><strong>Concepto:</strong> Imagina una fotografía digital con mucho zoom. Es una cuadrícula de píxeles.</em></li>
-<li><strong><em>Regla de la Máquina Nocional:</em>* En el mundo geoespacial, cada celda (píxel) no solo tiene un color, sino que tiene un </strong>valor*<em> (ej. temperatura, elevación) y una ubicación específica en la Tierra.</em></li>
+<li>
+<p><strong><em>Datos Ráster (Píxels):</em></strong> Imagina una fotografía digital con mucho zoom. Es una cuadrícula de píxeles, es como una <strong><em>Matriz de colores</em></strong>. En el mundo geoespacial, cada celda (píxel) no solo tiene un color, sino que tiene un <strong>valor</strong> (p.ej.) temperatura, elevación y una ubicación específica en la Tierra.</p>
+<ul>
 <li>
 <p><strong><em>Propiedades Críticas:</em></strong></p>
-<p><em>◦ </em><em>Resolución:</em><em> Es el tamaño del área que cubre un solo píxel. Regla de predicción: Si tienes alta resolución, tienes píxeles más pequeños y archivos más pesados (Introduce to R to Geospatial Concepts).</em></p>
-<p><em>◦ </em><em>Extensión:</em><em> Es el rectángulo total que abarca el mapa (Introduce to R to Geospatial Concepts).</em></p>
-</li>
-<li>
-<p><em>Datos Vectoriales: El Dibujo Geométrico</em></p>
-</li>
-<li><em><strong>Concepto:</strong> Son como los dibujos de "conectar los puntos". No son píxeles, son formas matemáticas.</em></li>
-<li>
-<p><em><strong>Regla de la Máquina Nocional:</strong> Se componen de tres tipos de objetos básicos que representan características de la superficie terrestre (Key points):</em></p>
-<p><em><strong>Puntos:</strong> Ubicaciones exactas (ej. un pozo).</em></p>
-<p><em><strong>Líneas:</strong> Conexiones entre puntos (ej. un río).</em></p>
-<p><em><strong>Polígonos:</strong> Áreas cerradas (ej. un lago).</em></p>
-</li>
-<li>
-<p><strong><em>El "Gancho" Cognitivo:</em>* A diferencia de un simple dibujo, los vectores tienen una </strong>Tabla de Atributos*<em> pegada a ellos. Cada punto en el mapa es una fila en una hoja de cálculo.</em></p>
-</li>
-<li>El Marco Común: CRS (Sistemas de Coordenadas)</li>
-<li><em><strong>Regla de Oro:</strong> Todos los datos (ráster y vector) deben "hablar el mismo idioma" de coordenadas para alinearse. Si el CRS es diferente, el mapa no encajará, aunque los datos sean correctos</em></li>
+<ol>
+<li><strong><em>Resolución:</em></strong> Es el tamaño del área que cubre un solo píxel. Si tienes alta resolución, tienes píxeles más pequeños y archivos más pesados, por el contrario, si tienes baja resolución, tienes píxeles más grandes y archivps menos pesados.</li>
+<li><strong><em>Extensión:</em></strong> Es el rectángulo total que abarca la fotogafía.</li>
 </ol>
-<p><strong>Máquina nocional parte B:</strong> <em>¿Qué tiene que ver R en todo esto?</em></p>
-<p>Aquí es donde combatimos el "pensamiento mágico" de que RStudio hace mapas automáticamente. Definimos R no como un visor de mapas, sino como un <strong>entorno de manipulación de estructuras</strong>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><em>Datos Vectoriales (Trazos):</em></strong> Son como los dibujos de <strong><em>Conectar los puntos</em></strong>. No son píxeles, son listas de coordenadas que se conectan entre sí. Se componen de tres tipos de objetos básicos que representan características de la superficie terrestre (key points):</p>
 <ul>
-<li><strong>RStudio es la Cabina de Mando:</strong> RStudio es solo una interfaz (GUI) amigable que nos permite enviar instrucciones a la máquina (keypoint).</li>
-<li><strong>Los Datos son Variables:</strong> En R, un mapa no es una imagen estática. Es una variable a la que asignamos valores usando <code>&lt;-</code>. Podemos sumar, restar y filtrar mapas igual que sumamos números simples (keypoint).</li>
-<li><strong>La Visualización es Construcción:</strong> R no "muestra" el mapa de golpe; lo construye. Usando herramientas como <code>ggplot2</code>, pensamos en gráficos por <strong>capas</strong> (aesthetics + geometry). Primero ponemos el lienzo, luego pintamos los puntos, luego las líneas (keypoint).</li>
-<li><strong>Lectura vs. Escritura:</strong> R lee los datos del disco (<code>read.csv</code> o funciones espaciales) y crea una copia en su memoria. Si te equivocas y borras una columna en R, el archivo original está a salvo (es de solo lectura en la práctica) (keypoint).</li>
+<li>
+<p><strong><em>Puntos:</em></strong> Ubicaciones exactas (ej. un pozo).</p>
+</li>
+<li>
+<p><strong><em>Líneas:</em></strong> Conexiones entre puntos (ej. un río).</p>
+</li>
+<li>
+<p><strong><em>Polígonos:</em></strong> Áreas cerradas (ej. un lago).</p>
+</li>
+</ul>
+<p>A diferencia de un simple dibujo, los vectores tienen una <strong>Tabla de Atributos</strong> pegada a ellos. Cada objeto en el mapa es una fila.</p>
+</li>
+<li>
+<p><strong><em>El Marco Común:</em></strong> Como regla de Oro, todos los datos (ráster y vector) deben "hablar el mismo idioma" de coordenadas para alinearse, deben de tener un CRS (Sistemas de Coordenadas). Si el CRS es diferente, el mapa no encajará, aunque los datos sean correctos.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Máquina nocional parte B:</strong> <em>¿Qué tiene que ver R en todo esto?</em> Aquí es donde combatimos el "pensamiento mágico" de que R hace mapas automáticamente. Definimos a R no como un visor de mapas, sino como un <strong>entorno de manipulación de estructuras</strong>.</p>
+<ol>
+<li><strong><em>R</em></strong> es la Cabina de Mando, es solo una interfaz amigable que nos permite enviar instrucciones a los objetos (key points).</li>
+<li>En R, un mapa no es una imagen estática. Es una <strong>variable</strong> a la que asignamos valores usando <code>&lt;-</code>. Podemos sumar, restar y filtrar mapas igual que sumamos números simples.</li>
+<li>R no "muestra" el mapa de golpe; lo construye usando herramientas como <code>ggplot2</code>, pensamos en gráficos por <strong>capas</strong>. Primero ponemos el lienzo, luego pintamos los puntos, luego las líneas y luego los polígonos.</li>
+<li>R lee los datos del disco (<code>read.csv</code> o funciones espaciales) y crea una copia en su memoria. Si te equivocas y borras una columna en R, el archivo original está a salvo (es de solo lectura en la práctica).</li>
+</ol>
+</li>
 </ul>
 </li>
 </ol>

@@ -7,10 +7,6 @@ La mente no es solo un receptor pasivo de información, sino un sistema que busc
 
 **¿Qué es un modelo mental?** De acuerdo con Wilson () es una representación simplificada de un dominio de problemas que permite razonar y resolver situaciones, aunque no sea técnicamente perfecta (como imaginar átomos como bolas y resortes). Dicho de otra manera, es un truco que usa tu cerebro para entender algo muy complejo sin tener que saber cada detalle técnico. No es la verdad absoluta, pero funciona para resolver problemas rápidos. Por eso, el desafío más delicado no es transmitir datos, sino construir una estructura donde esos datos vivan: los novatos no tienen un modelo mental denso; los expertos, sí.
 
-!!! quote "()"
-
-    El modelo de Dreyfus no es la "versión resumida" de Benner. Más bien, el marco académico complejo (tanto las 5 etapas de Benner como las del modelo de Dreyfus) se convierten en una herramienta operativa de tres niveles (Novato, Practicante Competente y Experto) para facilitar la labor del docente o facilitador.
-
 ### 2.2.1 Gestión de la Carga Cognitiva
 La **Máquina Nocional** es, desde mi perspectiva como facilitador, la herramienta más crítica para desmitificar la programación para los novatos o para aprender algo que impliqca utilizar un lenguaje de programación. Más que una lección técnica, representa el andamiaje psicológico indispensable para el aprendizaje.
 
@@ -47,7 +43,7 @@ for p in precios_con_iva:
 print(f"El total es: {total_acumulado:.2f}")
 ```
 
-*Mientras el experto ve un solo "trozo" o **chunk (patrón de acumulador),** el novato, que aún no tiene modelos mentales funcionales, procesa cada carácter de forma aislada, llenando sus 7±2 espacios de memoria de trabajo en segundos:*
+*Mientras el experto ve un solo "trozo" o ***chunk*** el novato, que aún no tiene modelos mentales funcionales, procesa cada carácter de forma aislada, llenando sus 7±2 espacios de memoria de trabajo en segundos:*
 
 1. **Sintaxis de Listas:** Los corchetes **`[]`** para definir una colección.
 2. **Tipos de Datos:** La diferencia entre enteros y flotantes (el uso del punto decimal).
@@ -65,60 +61,49 @@ _Al respetar el límite del 7±2, transformamos una pila inmanejable de hechos e
 ### 2.2.1 Gestión de la Carga Cognitiva
 Siguiendo la premisa de Wilson (), *“el conocimiento no se transfiere de forma pasiva”*; no se trata simplemente de “vaciar” información en la mente del estudiante. Por el contrario, debemos facilitar la construcción de modelos mentales efectivos y, específicamente, de una **máquina nocional** sólida que les permita razonar por sí mismos.
 
-En el siguiente ejemplo propone la construcción de una máquina nocional, para acercar a un grupo de estudiantes novatos a los conceptos *“Geoespaciales utilizando R”,* de manera estructurada y secuencial apoyada de recursos estratégicos para abordarla.
+En el siguiente ejemplo se propone la construcción de una máquina nocional, para acercar a un grupo de estudiantes novatos a los conceptos *“Geoespaciales utilizando R”,* de manera estructurada y secuencial apoyada de recursos estratégicos para abordarla.
 
-1.  **El primer paso es establecer nuestros cimientos (objetivo)**  
-    *Deseo introducir conceptos geoespaciales a un grupo de estudiantes novatos dentro de un curso de R. Mi objetivo es construir una **máquina nocional** que les permita responder: ¿Qué son los datos geoespaciales? y ¿Cómo interviene R en su procesamiento?.*
+1.  **El primer paso es establecer nuestros cimientos (el objetivo)**  
+    *Introducir conceptos geoespaciales a un grupo de estudiantes novatos dentro de un curso de R, apoyandonos de una **máquina nocional** que les permita responder: ¿Qué son los datos geoespaciales? y ¿Cómo interviene R en su procesamiento?.*
     *¿Cuál sería el nivel de abstracción más recomendable para este primer acercamiento, considerando que debo evitar la sobrecarga cognitiva y fomentar la creación de un modelo mental sólido desde el inicio?".*  
 
-!!! note
+    !!! note
 
-    Debemos resistir la tentación de empezar con la sintaxis del código. Primero debemos instalar en sus mentes la Máquina Nocional: el modelo mental simplificado de cómo la computadora y R perciben el espacio.  
+        Debemos resistir la tentación de empezar con la sintaxis del código. Primero debemos instalar en sus mentes la Máquina Nocional: el modelo mental simplificado de cómo la computadora y R perciben el espacio.  
 
 
 2.  **Instalación de la Máquina nocional**  
-    Para un novato, el nivel de abstracción más efectivo es una **"Caricatura Funcional"** de la realidad (Wilson). No debemos enseñarles sobre bits, ni formatos de archivo complejos (como la estructura interna de un Shapefile), ni sobre cómo R gestiona la memoria física. El nivel propuesto es el siguiente: *"El Mapa como Estructura de Datos”*.  
-    ***La abstracción debe ser:***
-    - ***El Mundo es una Malla o un Dibujo:** La computadora no "ve" un mapa; ve una matriz de números (Ráster) o una lista de coordenadas matemáticas (Vector).*
-    - ***R es el Traductor:** R toma esas listas de números y las "pinta" en la pantalla capa por capa.*
-    - ***Estado en Memoria:** Los mapas en R son **objetos** variables que viven en la memoria temporal RAM (Introduce to R to Geospatial Concepts).*
+    Para un novato, el nivel de abstracción más efectivo es una **"Caricatura Funcional"** de la realidad (Wilson). No debemos enseñarles sobre bits, ni formatos de archivo complejos (como la estructura interna de un Shapefile), ni sobre cómo R gestiona la memoria física. El modelo mental propuesto es ***"El Mapa como Estructura de Datos”***, y su abstracción podría ser la siguiente:
+    
+    - ***El Mundo es una Malla o un Dibujo:*** La computadora no "ve" un mapa; ve una matriz de números (Ráster) o una lista de coordenadas matemáticas (Vector).
+    - ***R es el Traductor:*** R toma esas listas de números y las "pinta" en la pantalla capa por capa.
+    - ***Estado en Memoria:*** Los mapas en R son objetos variables que viven en la memoria temporal RAM.
 
 3. **Máquina nocional**  
     Evitamos la carga cognitiva y dividimos esta máquina en dos partes: **la primera parte para hablar de ***“¿qué son los datos geoespaciales?”*** y la segunda para hablar de ***“¿qué tiene que ver R en todo esto?”**:*  
     
+    - **Máquina nocional parte A**: *¿Qué son los Datos Geoespaciales?* Para explicar esto, utilizaremos la analogía de *"Píxeles vs. Trazos"* y su marco en común, apoyada en las definiciones de fuentes confiables.
+        1. ***Datos Ráster (Píxels):*** Imagina una fotografía digital con mucho zoom. Es una cuadrícula de píxeles, es como una ***Matriz de colores***. En el mundo geoespacial, cada celda (píxel) no solo tiene un color, sino que tiene un **valor** (p.ej.) temperatura, elevación y una ubicación específica en la Tierra.
+            - ***Propiedades Críticas:***
+        
+                1. ***Resolución:*** Es el tamaño del área que cubre un solo píxel. Si tienes alta resolución, tienes píxeles más pequeños y archivos más pesados, por el contrario, si tienes baja resolución, tienes píxeles más grandes y archivps menos pesados.
+                2. ***Extensión:*** Es el rectángulo total que abarca la fotogafía.
+        
+        2. ***Datos Vectoriales (Trazos):*** Son como los dibujos de ***Conectar los puntos***. No son píxeles, son listas de coordenadas que se conectan entre sí. Se componen de tres tipos de objetos básicos que representan características de la superficie terrestre (key points):
+        
+            - ***Puntos:*** Ubicaciones exactas (ej. un pozo).
+        
+            - ***Líneas:*** Conexiones entre puntos (ej. un río).
+        
+            - ***Polígonos:*** Áreas cerradas (ej. un lago).
+        
+            A diferencia de un simple dibujo, los vectores tienen una **Tabla de Atributos** pegada a ellos. Cada objeto en el mapa es una fila.
+
+        3. ***El Marco Común:*** Como regla de Oro, todos los datos (ráster y vector) deben "hablar el mismo idioma" de coordenadas para alinearse, deben de tener un CRS (Sistemas de Coordenadas). Si el CRS es diferente, el mapa no encajará, aunque los datos sean correctos.
     
-    **Máquina nocional parte A**: *¿Qué son los Datos Geoespaciales?*
+    - **Máquina nocional parte B:** *¿Qué tiene que ver R en todo esto?* Aquí es donde combatimos el "pensamiento mágico" de que R hace mapas automáticamente. Definimos a R no como un visor de mapas, sino como un **entorno de manipulación de estructuras**.
     
-    Para explicar esto, utilizaremos la analogía de *"Píxeles vs. Trazos"*, apoyada en las definiciones de fuentes confiables.
-    
-    1. *Datos Ráster: La Matriz Pixelada*
-    - ***Concepto:** Imagina una fotografía digital con mucho zoom. Es una cuadrícula de píxeles.*
-    - ***Regla de la Máquina Nocional:** En el mundo geoespacial, cada celda (píxel) no solo tiene un color, sino que tiene un **valor** (ej. temperatura, elevación) y una ubicación específica en la Tierra.*
-    - ***Propiedades Críticas:***
-        
-        *◦ **Resolución:** Es el tamaño del área que cubre un solo píxel. Regla de predicción: Si tienes alta resolución, tienes píxeles más pequeños y archivos más pesados (Introduce to R to Geospatial Concepts).*
-        
-        *◦ **Extensión:** Es el rectángulo total que abarca el mapa (Introduce to R to Geospatial Concepts).*
-        
-    1. *Datos Vectoriales: El Dibujo Geométrico*
-    - ***Concepto:** Son como los dibujos de "conectar los puntos". No son píxeles, son formas matemáticas.*
-    - ***Regla de la Máquina Nocional:** Se componen de tres tipos de objetos básicos que representan características de la superficie terrestre (Key points):*
-        
-        ***Puntos:** Ubicaciones exactas (ej. un pozo).*
-        
-        ***Líneas:** Conexiones entre puntos (ej. un río).*
-        
-        ***Polígonos:** Áreas cerradas (ej. un lago).*
-        
-    - ***El "Gancho" Cognitivo:** A diferencia de un simple dibujo, los vectores tienen una **Tabla de Atributos** pegada a ellos. Cada punto en el mapa es una fila en una hoja de cálculo.*
-    1. El Marco Común: CRS (Sistemas de Coordenadas)
-    - ***Regla de Oro:** Todos los datos (ráster y vector) deben "hablar el mismo idioma" de coordenadas para alinearse. Si el CRS es diferente, el mapa no encajará, aunque los datos sean correctos*
-    
-    **Máquina nocional parte B:** *¿Qué tiene que ver R en todo esto?*
-    
-    Aquí es donde combatimos el "pensamiento mágico" de que RStudio hace mapas automáticamente. Definimos R no como un visor de mapas, sino como un **entorno de manipulación de estructuras**.
-    
-    - **RStudio es la Cabina de Mando:** RStudio es solo una interfaz (GUI) amigable que nos permite enviar instrucciones a la máquina (keypoint).
-    - **Los Datos son Variables:** En R, un mapa no es una imagen estática. Es una variable a la que asignamos valores usando `<-`. Podemos sumar, restar y filtrar mapas igual que sumamos números simples (keypoint).
-    - **La Visualización es Construcción:** R no "muestra" el mapa de golpe; lo construye. Usando herramientas como `ggplot2`, pensamos en gráficos por **capas** (aesthetics + geometry). Primero ponemos el lienzo, luego pintamos los puntos, luego las líneas (keypoint).
-    - **Lectura vs. Escritura:** R lee los datos del disco (`read.csv` o funciones espaciales) y crea una copia en su memoria. Si te equivocas y borras una columna en R, el archivo original está a salvo (es de solo lectura en la práctica) (keypoint).
+        1. ***R*** es la Cabina de Mando, es solo una interfaz amigable que nos permite enviar instrucciones a los objetos (key points).
+        2. En R, un mapa no es una imagen estática. Es una **variable** a la que asignamos valores usando `<-`. Podemos sumar, restar y filtrar mapas igual que sumamos números simples.
+        3. R no "muestra" el mapa de golpe; lo construye usando herramientas como `ggplot2`, pensamos en gráficos por **capas**. Primero ponemos el lienzo, luego pintamos los puntos, luego las líneas y luego los polígonos.
+        3. R lee los datos del disco (`read.csv` o funciones espaciales) y crea una copia en su memoria. Si te equivocas y borras una columna en R, el archivo original está a salvo (es de solo lectura en la práctica).

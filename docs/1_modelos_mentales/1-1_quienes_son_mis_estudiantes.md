@@ -7,7 +7,7 @@ Sin embargo, (p.ej.) en una clase de SIG para licenciaturas como Ciencia de Dato
 
 No obstante, podemos encontrar todo lo anterior y un poco más, pero con una carencia común: estudiantes que no siempre saben que los SIG han sido introducidos en su currículo para comprender y analizar el entorno geográfico inmediato. En la mayoría de los casos, estos perfiles enfrentan el reto porque, sencillamente, **“no saben lo que no saben”**.
 
-En la obra *“Teach Tech Together”*, Greg Wilson retoma el modelo instruccional de Benner, que identifica cinco etapas de desarrollo cognitivo (de novato a experto) por las que la mayoría atraviesa de forma consistente. También utiliza el modelo de los hermanos Dreyfus para clasificar a los estudiantes (de incompetente a competente). Esta distinción es vital, pues es el punto de partida para diseñar el material que se va a compartir.
+En la obra *“Teach Tech Together”*, Greg Wilson retoma el modelo instruccional de Benner, que identifica cinco etapas de desarrollo cognitivo (de novato a experto) por las que la mayoría atraviesa de forma consistente. También utiliza el modelo de los hermanos Dreyfus para clasificar a los estudiantes (de incompetente a competente). Esta distinción es vital, pues es el punto de partida para diseñar cualquier material que se vaya a compartir.
 
 Desde la perspectiva del diseño de experiencias de aprendizaje, no basta con intentar clasificar a nuestros pupilos; es necesario entender cuál es el **costo de no hacerlo**.
 
@@ -21,7 +21,7 @@ La siguiente tabla presenta las categorías de estudiantes correspondientes a lo
 | :---------      | :------------------------------------|
 | Novatos         | Incompetencia inconsciente|
 | Practicantes competentes    | Incompetencia consciente |
-| Expertos                    | Competencia inconsciente |
+| Expertos                    | Competencia consciente |
 |                             | Competencia inconsciente |
 
 ### 1.1.1 Efecto de Inversión de la Experiencia
