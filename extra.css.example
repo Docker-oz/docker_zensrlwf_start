@@ -6,26 +6,26 @@
 p {
   text-align: justify !important;
   text-justify: inter-word !important;
-  hyphens: auto !important;
-  word-break: break-word !important;
+  hyphens: none !important;
+  overflow-wrap: break-word !important;
 }
 
 .md-typeset p {
   text-align: justify !important;
   text-justify: inter-word !important;
-  hyphens: auto !important;
+  hyphens: none !important;
 }
 
 .md-content__inner.md-typeset p {
   text-align: justify !important;
   text-justify: inter-word !important;
-  hyphens: auto !important;
+  hyphens: none !important;
 }
 
 article.md-typeset p {
   text-align: justify !important;
   text-justify: inter-word !important;
-  hyphens: auto !important;
+  hyphens: none !important;
 }
 
 .md-content__inner.md-typeset {
@@ -47,4 +47,10 @@ article.md-typeset p {
 .md-typeset ol li p {
   display: inline !important;
   margin: 0 !important;
+}
+
+/* Sangría para listas de viñetas dentro de listas numeradas */
+.md-typeset ol li > ul {
+  padding-left: 1.5em !important;
+  margin-top: 0.25em !important;
 }

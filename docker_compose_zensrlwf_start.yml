@@ -1,0 +1,8 @@
+services:
+  docs:
+    build: .
+    container_name: docker_compose_zensrlwf-start
+    ports:
+      - "47829:47829"  # Puerto poco común (host y contenedor) para evitar choques con 8000/8080
+    volumes:
+      - .:/app

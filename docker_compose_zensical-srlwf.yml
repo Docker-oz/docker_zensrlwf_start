@@ -1,8 +1,0 @@
-services:
-  docs:
-    build: .
-    container_name: docker_compose_zensical-srlwf
-    ports:
-      - "8000:8000"
-    volumes:
-      - .:/app
