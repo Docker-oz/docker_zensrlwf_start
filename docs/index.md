@@ -20,7 +20,7 @@ Mi más sincero respeto y reconocimiento a los profesionales de la educación y 
 
 **¿Para qué sirve?**
 
-Es una herramienta para "instructores", por así decirlo. Permite construir lecciones que tengan una forma de aprendizaje **activa** y no **pasiva**, bajo la idea de democratizar la creación de cursos de ***R***.
+Es una herramienta para _instructores_, por así decirlo. Permite construir lecciones que tengan una forma de aprendizaje **activa** y no **pasiva**, bajo la idea de democratizar la creación de cursos de ***R***.
 
 
 !!! Quote "swirlify Docs (2025, Introduction)"
@@ -29,7 +29,7 @@ Es una herramienta para "instructores", por así decirlo. Permite construir lecc
 
 **¿Cómo funciona?**
 
-Los estudiantes son guiados a través de ejercicios de programación de ***R*** donde pueden responder preguntas en su consola. Todo utilizando el paquete `swirl` para que la creación de cursos sea simple y su ejecución, interactiva.
+Los aprendices son guiados a través de ejercicios de programación de ***R*** donde pueden responder preguntas en su consola. Todo utilizando el paquete `swirl` para que la creación de cursos sea simple y su ejecución, interactiva.
 
 !!! Quote "swirlify Docs (2025, Introduction)"
     _**“Esto es crucial porque, a diferencia de los libros o videos, obliga al usuario a escribir código y a enfrentar sus errores en el momento"**_
@@ -41,11 +41,11 @@ Para la documentación completa [swirlify Docs](https://swirlstats.com/swirlify/
 **Propósito principal**
 
 
-El propósito principal de esta guía es aprender a construir cursos interactivos para aprender ***R*** utilizando **Swirlify**. En la enseñanza de programación, especialmente para novatos, la clave es darles el camino. ***Swirlify*** hace esto de manera brillante: te guía a través del código, te rectifica de inmediato y no te deja avanzar hasta que lo has hecho bien. No te pide que seas creativo, te pide que sigas las reglas.
+El propósito principal de esta guía es presentar una manera de construir cursos interactivos en ***R*** utilizando **Swirlify**. En la enseñanza de programación, especialmente para novatos, la clave es darles el camino. ***Swirlify*** hace esto de manera brillante: te guía a través del código, te rectifica de inmediato y no te deja avanzar hasta que lo has hecho bien. No te pide que seas creativo, te pide que sigas las reglas.
 
 **Alcance**
 
-Un tutorial y guía metodológica para instructores interesados en crear lecciones interactivas de programación en ***R*** utilizando la biblioteca especializada `swirlify`, fundamentando el diseño de dichas lecciones en modelos de adquisición de habilidades **(Benner y Dreyfus)** y prácticas de enseñanza diferenciada y activa **(Teaching Tech Together de Greg Wilson)**, todo en el marco de las competencias de calidad en capacitación en línea **(estándar EC0366)**.
+Una guía metodológica para instructores interesados en crear lecciones interactivas de cualquier tema de programación, especialmente en el lenguaje _**R**_ y utilizando la biblioteca especializada `swirlify`, fundamentando el diseño de dichas lecciones en modelos de adquisición de habilidades (como el de **Benner y Dreyfus**) y prácticas de enseñanza diferenciada y activa mencionadas en el texto **"Teaching Tech Together de Greg Wilson"**, todo en el marco de las competencias de calidad en capacitación en línea **(estándar EC0366)**.
 
 ---
 

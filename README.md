@@ -3,10 +3,10 @@
 Este documento centraliza los comandos necesarios para gestionar el ciclo de vida del contenedor de documentación de **Self Service - Courses**, utilizando la configuración personalizada de este repositorio.
 
 ## 📋 Información de Configuración
-* **Archivo de Orquestación:** `docker_compose_zensrlwf_start`
-* **Nombre del Contenedor:** `docker_compose_zensrlwf-start`
+* **Archivo de Orquestación:** `docker_compose_zensrlwf_start.yml`
+* **Nombre del Contenedor:** `Dockerfile`
 * **Imagen Base:** `python:3.11-slim` (con Zensical preinstalado)
-* **Puerto de Acceso:** `8000`
+* **Puerto de Acceso:** `47829`
 
 ---
 
@@ -33,5 +33,5 @@ docker compose -f docker_compose_zensrlwf_start.yml down --rmi all --volumes
 docker logs -f docker_compose_zensrlwf_start.yml
 
 # Listar el estado del contenedor para verificar si está corriendo (Up)
-docker ps -a --filter "name=docker_compose_zensrlwf-start"
+docker ps -a --filter "docker_compose_zensrlwf_start"
 ```

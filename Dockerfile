@@ -11,7 +11,7 @@ RUN pip install zensical
 COPY . .
 
 # Expose the port Zensical runs on
-EXPOSE 8000
+EXPOSE 47829
 
 # Command to build and serve the documentation
-CMD ["zensical", "serve", "--dev-addr", "0.0.0.0:8000"]
+CMD ["zensical", "serve", "--dev-addr", "0.0.0.0:47829"]
