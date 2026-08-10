@@ -28,7 +28,7 @@ jobs:
         run: docker build -t zensical-builder .
 
       - name: Generar sitio estático con Zensical en Docker
-        run: docker run --rm -v ${{ github.workspace }}:/docs zensical-builder
+        run: docker run --rm -v ${{ github.workspace }}:/docs --entrypoint mkdocs zensical-builder build
 
       - name: Subir artefactos de GitHub Pages
         uses: actions/upload-pages-artifact@v3
