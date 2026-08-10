@@ -1,0 +1,40 @@
+name: Deploy SS-Courses Zensical Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Si tu rama principal se llama 'master', cámbialo a 'master'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Construir imagen de Docker
+        run: docker build -t zensical-builder .
+
+      - name: Generar sitio estático con Zensical en Docker
+        run: docker run --rm -v ${{ github.workspace }}:/docs zensical-builder build
+
+      - name: Subir artefactos de GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './site' # Zensical genera por defecto el sitio estático en la carpeta ./site
+
+      - name: Desplegar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
