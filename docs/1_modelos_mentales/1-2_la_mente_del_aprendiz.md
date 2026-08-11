@@ -20,7 +20,7 @@ Uno de los factores de éxito de una máquina nocional radica en cómo se gestio
 
 Por tanto, no hay que limitarnos solo a _trasmitir_ información, sino a aplicar la **regla de oro (7±2)** como lo menciona Greg Wilson para gestionar la carga cognitiva de los aprendices. El objetivo es evitar que la información nueva desplace a la anterior, asegurando que cada concepto tenga un lugar sólido donde vivir.
 
-!!! quote "()"
+!!! quote "Wilson ()"
 
     _“La memoria de trabajo es limitada y solo puede retener aproximadamente 7 (más o menos 2) elementos a la vez. Si sobrepasamos este número saturamos la carga cognitiva del aprendiz. Investigaciones recientes indican que este número pude se más bajo como 4 (más o menos 1)”._
 
@@ -28,9 +28,9 @@ Por tanto, no hay que limitarnos solo a _trasmitir_ información, sino a aplicar
   <i>(p.ej.) Sin una máquina nocional explícitamente diseñada por el facilitador (una abstracción simplificada pero precisa de cómo funciona el sistema), el Novato no deja su mente en blanco; la llena con basura cognitiva, no puede predecir qué hará el código ni depurarlo (debug). Solo puede adivinar y realizar cambios aleatorios esperando que funcione, lo cual refuerza malos hábitos. Finalmente, el costo más humano es la desmotivación.</i>
 </p>
 
-La ausencia de sesiones de aprendizaje basadas en la gestión de la carga cognitiva, el aula (física o virtual) se vuelve un sistema de selección excluyente, no construimos el andamiaje adecuado y no estamos enseñando; estamos filtrando a los estudiantes por sus capacidades previas en lugar de desarrollarlas.
+La ausencia de sesiones de aprendizaje basadas en la gestión de la carga cognitiva, el aula (física o virtual) se vuelve un sistema de selección excluyente, no construimos el andamiaje adecuado y no estamos enseñando; estamos filtrando a las personas por sus capacidades previas en lugar de desarrollarlas.
 
-!!! quote "()"
+!!! quote "Wilson ()"
 
     _“Cuando un estudiante se enfrenta a una carga cognitiva mal gestionada y falla, rara vez culpa al mal diseño instruccional; se culpa a sí mismo. Esto alimenta el **Síndrome del Impostor** y la creencia de que no tiene el gen para esto, afectando desproporcionadamente a grupos subrepresentados ()”_
 
@@ -64,17 +64,17 @@ El desgloce de elementos de la carga cognitiva es el siguiente:
 
 4. **Códigos EPSG**: El argumento implícito `4326` exige saber que se refiere al estándar `WGS84`.
 
-5. **Geoprocesamiento / Análisis Espacial**: La función st_buffer() introduce operaciones topológicas y la creación de nuevas geometrías alrededor de las existentes.
+5. **Geoprocesamiento / Análisis Espacial**: La función `st_buffer()` introduce operaciones topológicas y la creación de nuevas geometrías alrededor de las existentes.
 
 7. **Unidades de Distancia Espacial**: El argumento `dist = 100` genera ambigüedad si no se comprende en qué unidades está configurado el CRS actual (grados vs. metros).
 
-8. **Vectorización y Operaciones Espaciales**: La función st_area() calcula superficies área por área retornando un vector con unidades explícitas (clase units).
+8. **Vectorización y Operaciones Espaciales**: La función `st_area()` calcula superficies área por área retornando un vector con unidades explícitas (clase units).
 
 9. **Agregación Vectorial**: La función `sum()` sobre un objeto de geometría espacial exige entender que se reduce un vector topológico a un escalar numérico.
 
 10. **Coerción e Interpolación**: El uso de `paste()` para concatenar texto con la salida de un objeto con atributos de unidad espacial (units).
 
-!!! note
+!!! nota
 
     _Como podemos observar, este es un claro ejemplo del **punto ciego del experto**: cuando un instructor, facilitador o profesional domina profundamente un tema, pierde la capacidad de estructurar el contenido desde la perspectiva de un Novato. De este modo, intenta abordar demasiados conceptos simultáneamente sin ofrecer a los aprendices un marco claro en donde organizar cada uno de estos elementos._
 
@@ -220,3 +220,5 @@ Aquí es donde entra el vocabulario técnico formal: cada una de estas clases ti
 
 ### Conclusión
 Greg Wilson concluye que enseñar programación de forma efectiva exige abandonar la intuición y tratar la docencia como una disciplina basada en evidencia, desplazando el enfoque tradicional centrado en la sintaxis hacia la construcción explícita de modelos mentales. Para lograrlo, enfatiza que los instructores deben mitigar conscientemente su propio punto ciego de experto mediante la reducción de la carga cognitiva del aprendiz, utilizando la codificación en vivo (como más adelante se verá), la retroalimentación formativa frecuente y el aprendizaje entre pares para diagnosticar errores conceptuales antes de avanzar a la implementación técnica.
+
+Este enfoque pedagógico se potencia de manera rigurosa al estructurar las capacitaciones bajo la metodología instruccional del estándar de competencia EC0366 en México, el cual garantiza el diseño sistemático de cursos en línea mediante objetivos medibles, secuencias didácticas validadas y guías de evaluación alineadas. De este modo, la evidencia cognitiva propuesta por Wilson se traduce en una arquitectura instruccional estandarizada que asegura la efectividad del aprendizaje y el cumplimiento de altos criterios de calidad profesional.

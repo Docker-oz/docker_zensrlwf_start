@@ -53,7 +53,7 @@ Patricia Benner estudió la adquisición de habilidades en enfermería no solo p
 - **El Practicante Competente:** Es el público ideal para los manuales o guías de referencia. Estos estudiantes ya poseen cierta comprensión de los límites de su conocimiento porque ya **_"saben lo que no saben"_** y, por lo tanto, saben qué buscar. Sin embargo, su modelo mental sigue siendo frágil ante situaciones excepcionales.
 - **El Experto:** Representa una transformación cualitativa en el procesamiento de la información. Sus modelos mentales incluyen excepciones, casos especiales y una red densamente conectada de relaciones. El experto puede saltar directamente del problema a la solución (**intuición**) porque existe un enlace directo en su grafo mental, omitiendo los pasos intermedios del razonamiento lógico tradicional (A → B → C).
 
-    !!! note
+    !!! nota
 
         _Muchos tutores, maestros, facilitadores y otros, a menudo sufren del **"punto ciego del experto"** debido a sus modelos mentales muy avanzados. Han olvidado lo que se siente no tener esas conexiones, lo que paradójicamente puede hacerlos maestros menos efectivos que un practicante competente, ya que tienden a organizar su enseñanza basándose en principios profundos y abstractos en lugar de en lo que el estudiante necesita para empezar._
 
@@ -66,7 +66,7 @@ Una vez que hemos hablado sobre el modelo de Benner, es momento de hablar de Dre
 - **Competencia Consciente:** El aprendiz ha aprendido a hacer algo, pero requiere concentración total y descomponer la tarea en pasos. Esto se alinea con el _Practicante Competente_, que puede realizar tareas con esfuerzo normal.
  **Competencia Inconsciente:** La habilidad se vuelve una segunda naturaleza y se ejecuta de manera reflexiva. Esto corresponde al perfil _Experto_ de Benner, quien utiliza la intuición y el reconocimiento de patrones instantáneo
 
-    !!! note
+    !!! nota
 
         _El modelo de Dreyfus no es la "versión resumida" de Benner. Más bien, el marco académico complejo (tanto las 5 etapas de Benner como las del modelo de Dreyfus) se convierten en una herramienta operativa de tres niveles (Novato, Practicante Competente y Experto) para facilitar la labor del docente o facilitador._
 
@@ -74,6 +74,6 @@ Entonces, no se necesita diagnosticar cinco niveles sutiles en una clase o curso
 
 Es muy importante tener esto en cuenta, porque te obliga a reconocer que, aunque seas un _experto_ (competente inconsciente) en programación, podrías ser un _incompetente consciente_ en diseño gráfico o pedagogía. Recordar la sensación de esfuerzo que requiere adquirir una competencia te ayuda a evitar el _punto ciego del experto_ y a tener más paciencia con los estudiantes que están luchando por construir sus modelos mentales.
 
-!!! note
+!!! nota
 
     _El texto utiliza a Dreyfus como la base teórica para justificar por qué no podemos enseñar a todos por igual, validando la necesidad de adaptar la instrucción a la madurez del modelo mental del aprendiz._
