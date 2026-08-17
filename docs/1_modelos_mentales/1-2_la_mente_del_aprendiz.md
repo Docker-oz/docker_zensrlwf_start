@@ -1,17 +1,17 @@
 # 1.2 La mente del aprendiz 🧠
 ______
-Ha llegado el momento de hablar sobre los **modelos mentales** y su importancia. Quizás esta sea la parte que más me interesa dejar clara, ya que mucho de lo que compartiré sobre *Swirlify* tiene su origen en este concepto.
+Ha llegado el momento de hablar sobre los **modelos mentales** y su importancia. Quizás esta sea la parte que más me interesa dejar clara, ya que mucho de lo que compartiré en ***Swirlify*** tiene sus bases en todo esto.
 
 !!! nota
     _Antes de diseñar clases o cursos, debemos tener muy en cuenta la manera en que construimos nuestro aprendizaje. No obstante, quiero hacer una aclaración: por ningún motivo pretendo decir que lo compartido en estas líneas sea la única forma de poder dar buenas clases o cursos, ni mucho menos la panacea para los modelos instruccionales de cursos. Es, simplemente, un punto de vista muy particular basado en lo que me ha dado resultado en el contenido de mis capacitaciones._
 
-**_-"¿Qué es un modelo mental?"-_**... De acuerdo con Wilson () es una representación simplificada del dominio de un problema que permite razonar y resolver situaciones, aunque no sea técnicamente perfecta (como imaginar átomos como bolas y resortes). Dicho de otra manera, es un truco que usa tu cerebro para entender algo muy complejo sin tener que saber cada detalle técnico. **¡NO!** es una copia fotográfica de la realidad; **¡NO!** es la verdad absoluta, pero funciona para resolver problemas rápidos. Por eso, el desafío más delicado no es transmitir datos, sino construir una estructura donde esos datos vivan: los _Novatos_ no tienen un modelo mental denso; los _Expertos_, sí.
+**_-"¿Qué es un modelo mental?"-_**... De acuerdo con Wilson (2019) es una representación simplificada del dominio de un problema que permite razonar y resolver situaciones, aunque no sea técnicamente perfecta (como imaginar átomos como bolas y resortes). Dicho de otra manera, es un truco que usa tu cerebro para entender algo muy complejo sin tener que saber cada detalle técnico. **¡NO!** es una copia fotográfica de la realidad; **¡NO!** es la verdad absoluta, pero funciona para resolver problemas rápidos. Por eso, el desafío más delicado no es transmitir datos, sino construir una estructura donde esos datos vivan: los _Novatos_ no tienen un modelo mental denso; los _Expertos_, sí.
 
 Así entonces, la mente no es solo un receptor pasivo de información, sino un sistema que busca activamente construir modelos mentales.
 
-!!! quote "Wilson ()"
+!!! quote "Wilson (2019)"
 
-       _"La **Máquina Nocional** es un tipo de modelo mental específico que propone Greg Wilson, utilizado para aprender o presentar un problema en programación (). Es la abstracción idealizada del hardware y el entorno de ejecución que explica cómo la computadora toma el código (sintaxis) y le da significado (semántica), ejecutando acciones paso a paso"._
+       _"La **Máquina Nocional** es un tipo de modelo mental específico que propone Greg Wilson, utilizado para aprender o presentar un problema en programación. Es la abstracción idealizada del hardware y el entorno de ejecución que explica cómo la computadora toma el código (sintaxis) y le da significado (semántica), ejecutando acciones paso a paso"._
 
 
 ### 1.2.1 Gestión de la Carga Cognitiva
@@ -20,24 +20,24 @@ Uno de los factores de éxito de una máquina nocional radica en cómo se gestio
 
 Por tanto, no hay que limitarnos solo a _trasmitir_ información, sino a aplicar la **regla de oro (7±2)** como lo menciona Greg Wilson para gestionar la carga cognitiva de los aprendices. El objetivo es evitar que la información nueva desplace a la anterior, asegurando que cada concepto tenga un lugar sólido donde vivir.
 
-!!! quote "Wilson ()"
+!!! quote "Wilson (2019)"
 
     _“La memoria de trabajo es limitada y solo puede retener aproximadamente 7 (más o menos 2) elementos a la vez. Si sobrepasamos este número saturamos la carga cognitiva del aprendiz. Investigaciones recientes indican que este número pude se más bajo como 4 (más o menos 1)”._
 
 <p style="margin-left: 2em; margin-top: 0; margin-bottom: 0;">
-  <i>(p.ej.) Sin una máquina nocional explícitamente diseñada por el facilitador (una abstracción simplificada pero precisa de cómo funciona el sistema), el Novato no deja su mente en blanco; la llena con basura cognitiva, no puede predecir qué hará el código ni depurarlo (debug). Solo puede adivinar y realizar cambios aleatorios esperando que funcione, lo cual refuerza malos hábitos. Finalmente, el costo más humano es la desmotivación.</i>
+  <i>(p.ej.) Sin una máquina nocional explícitamente diseñada por el facilitador, el Novato no deja su mente en blanco; la llena con basura cognitiva, no puede predecir qué hará el código ni depurarlo (debug). Solo puede adivinar y realizar cambios aleatorios esperando que funcione, lo cual refuerza malos hábitos. Finalmente, el costo más humano es la desmotivación.</i>
 </p>
 
 La ausencia de sesiones de aprendizaje basadas en la gestión de la carga cognitiva, el aula (física o virtual) se vuelve un sistema de selección excluyente, no construimos el andamiaje adecuado y no estamos enseñando; estamos filtrando a las personas por sus capacidades previas en lugar de desarrollarlas.
 
-!!! quote "Wilson ()"
+!!! quote "Wilson (2019)"
 
-    _“Cuando un estudiante se enfrenta a una carga cognitiva mal gestionada y falla, rara vez culpa al mal diseño instruccional; se culpa a sí mismo. Esto alimenta el **Síndrome del Impostor** y la creencia de que no tiene el gen para esto, afectando desproporcionadamente a grupos subrepresentados ()”_
+    _“Cuando un estudiante se enfrenta a una carga cognitiva mal gestionada y falla, rara vez culpa al mal diseño instruccional; se culpa a sí mismo. Esto alimenta el **Síndrome del Impostor** y la creencia de que no tiene el gen para esto, afectando desproporcionadamente a grupos subrepresentados”_
 
-### 1.2.2 Ejemplo de una capacitación normal sin una Máquina Nocional
+### 1.2.2 Ejemplo de la ausencia de una Máquina Nocional
 La Máquina Nocional es, desde mi perspectiva como facilitador, la herramienta más crítica para desmitificar la programación para los _Novatos_ o para aprender algo que implica utilizar un lenguaje de programación. Más que una lección técnica, representa el andamiaje psicológico indispensable para el aprendizaje.
 
-A continuación, se propone un ejemplo basado en la literatura _**“Teach Tech Together”**_. Tiene el fin de ejemplificar una sobrecarga cognitiva producto de su mala gestión, además de la omisión de un modelo mental. Después se presentará el mismo ejemplo pero con una máquina nocional adecuada, que gestione su carga cognitiva sin llegar a la saturación de elementos, además de integrar otras estrategias que soportan el andamieaje cognitivo durante el aprendizaje:
+A continuación, se propone un ejemplo basado en la literatura _“Teach Tech Together”_. Tiene el fin de ejemplificar una sobrecarga cognitiva producto de su mala gestión, además de la omisión de un modelo mental. Después se presentará el mismo ejemplo pero con una máquina nocional adecuada, que gestione su carga cognitiva sin llegar a la saturación de elementos, además de integrar otras estrategias que soportan el andamieaje cognitivo durante el aprendizaje:
 
 <p style="margin-left: 2em; margin-top: 0; margin-bottom: 0;">
   <i>Imagina que alguien intenta enseñar a un grupo de Novatos cual es el estandar de datos "Geoespaciales utilizando R" (<b>simple feature</b>) y al mismo tiempo enseñar cómo se utiliza la biblioteca <b>sf</b> que gestiona esos datos presentando de golpe este fragmento de código:</i>
@@ -60,7 +60,7 @@ El desgloce de elementos de la carga cognitiva es el siguiente:
 
 2. **Objeto sf (Simple Features)**: El concepto de un data frame espacial que combina una tabla de atributos convencional con una columna geométrica especial (geometry / sfc).
 
-3. **Sistemas de Referencia de Coordenadas (CRS)**: La función st_transform() introduce la diferencia entre coordenadas proyectadas (metros) y geográficas (grados).
+3. **Sistemas de Referencia de Coordenadas (CRS)**: La función `st_transform()` introduce la diferencia entre coordenadas proyectadas (metros) y geográficas (grados).
 
 4. **Códigos EPSG**: El argumento implícito `4326` exige saber que se refiere al estándar `WGS84`.
 
@@ -78,7 +78,7 @@ El desgloce de elementos de la carga cognitiva es el siguiente:
 
     _Como podemos observar, este es un claro ejemplo del **punto ciego del experto**: cuando un instructor, facilitador o profesional domina profundamente un tema, pierde la capacidad de estructurar el contenido desde la perspectiva de un Novato. De este modo, intenta abordar demasiados conceptos simultáneamente sin ofrecer a los aprendices un marco claro en donde organizar cada uno de estos elementos._
 
-### 1.2.3 Ejemplo de una capacitación de acuerdo con Greg Wilson
+### 1.2.3 Ejemplo de una gestión de carga cognitiva
 Ahora, se propone la construcción de una máquina nocional para acercar al mismo grupo de aprendices _Novatos_ a los conceptos *“Geoespaciales utilizando R”*, pero de manera estructurada y describiendo cada uno de los recursos extras de aprendizaje que dan soporte cognitivo a la máquina nocional.
 
 <div style="background-color: #1a1c23; border-radius: 8px; padding: 1.2rem 1.5rem; color: #e6edf3; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 0.95em; line-height: 1.6; margin: 1.5em 0; border: 1px solid #30363d;">
@@ -96,7 +96,7 @@ Ahora, se propone la construcción de una máquina nocional para acercar al mism
   <div style="display: flex; justify-content: flex-end; margin-top: 1em;">
     <div style="background-color: #21262d; border: 1px solid #30363d; border-radius: 8px; padding: 0.8em 1em; max-width: 80%; color: #c9d1d9;">
     <p style="margin: 0; font-size: 0.9em; text-align: right;"><b>Pregunta de abordaje:</b></p>
-      <p style="margin: 0.3em 0 0 0; text-align: left;"><i>-"¿Alguna vez has trabajado con datos que tienen ubicación (coordenadas), con un mapa, con un archivo shapefile, con un GPS?"-; no importa si ha sido en R, en EXCEL o en un SIG; incluso si solo has mirando un mapa en el celular: -"¿cómo se veen esos datos"?; ¿son una tabla con columnas?; ¿tienen alguna forma en particualr?-".</i></p>
+      <p style="margin: 0.3em 0 0 0; text-align: left;"><i>-"¿Alguna vez has trabajado con datos que tienen ubicación (coordenadas), con un mapa, con un archivo shapefile, con un GPS?"-; no importa si ha sido en R, en EXCEL o en un SIG; incluso si solo has mirando un mapa en el celular: -"¿cómo se ven esos datos"?; ¿son una tabla con columnas?; ¿tienen alguna forma en particualr?-".</i></p>
     </div>
   </div>
 
@@ -166,7 +166,7 @@ Aquí es donde entra el vocabulario técnico formal: cada una de estas clases ti
   
   <p style="margin: 0 0 0.8em 0;"> ✅ Qué aprendimos: El estándar simple feature representa objetos del mundo real como geometría + atributos de forma consistente entre programas. El paquete <i>sf</i> lo implementa <i>R</i> con ventajas de velocidad, nomenclatura consistente (<i>st_</i>) e integración con tidyverse. Existen varios tipos de geometría (Point, Linestring, Polygon y sus versiones múltiples) según la complejidad espacial del rasgo.</p>
 
-  🔗 Cómo se conecta con lo que viene: La siguiente sesión profundiza en las ventajas de sf frente a sp con más detalle técnico y vocabulario que se usa constantemente.</p>
+  🔗 Cómo se conecta con lo que viene: La siguiente sesión profundiza en las ventajas de <i>sf</i> frente a <i>sp</i> con más detalle técnico y vocabulario que se usa constantemente.</p>
 
 Aquí es donde entra el vocabulario técnico formal: cada una de estas clases tiene un nombre reservado dentro de <i>sf</i>, y ese nombre determina qué operaciones puedes hacerle (p.ej. <i>st_length()</i> tiene sentido para Linestring, pero no para Polygon).</p>
 
@@ -183,18 +183,22 @@ Aquí es donde entra el vocabulario técnico formal: cada una de estas clases ti
 
 </div>
 
-1. **El primer paso es establecer nuestros cimientos (el objetivo principal)**:
+1.  **El primer paso es establecer nuestros cimientos (el objetivo principal):**
 
-    En esta parte los aprendices _Novatos_ **_"no saben lo que no saben"_**, mucho menos tienen modelos mentales sobre los datos geoespaciales. Por eso, el primer paso es plantear el cimiento de la máquina nocional más adecuado para el curso o capacitación.
+    En esta parte los aprendices _Novatos_ **_"no saben lo que no saben"_**, mucho menos tienen modelos mentales sobre los datos geoespaciales. Por eso, el primer paso es plantear el cimiento de la máquina nocional más adecuado para el curso o capacitación:
 
-    !!! nota
+    <div style="margin-left: 2em; margin-top: 1em; margin-bottom: 1em;">
+      <i>(p.ej.) Introducir los conceptos "Geoespaciales en R" a un grupo de aprendices Novatos, para permitirnos responder: ¿Qué son los datos geoespaciales? y ¿Cómo interviene R en su procesamiento?.</i>
+    </div>
+
+    <div style="margin-left: 2em;">
+
+    !!! note "Nota"
         </br>
         </br>
         _Debemos resistir la tentación de empezar con la **sintaxis del código**. Primero debemos instalar en sus mentes el objetivo de la Máquina Nocional: la elección del modelo mental más simplificado de cómo la computadora y R perciben el espacio viene después._
 
-    <p style="margin-top: 0.8em; margin-bottom: 0;">
-      <i>(p.ej.) Introducir los conceptos "Geoespaciales en R" a un grupo de aprendices Novatos, para permitirnos responder: ¿Qué son los datos geoespaciales? y ¿Cómo interviene R en su procesamiento?.</i>
-    </p>
+    </div>
 
 2. **Presentación del modelo mental**:
 
@@ -221,4 +225,4 @@ Aquí es donde entra el vocabulario técnico formal: cada una de estas clases ti
 ### Conclusión
 Greg Wilson concluye que enseñar programación de forma efectiva exige abandonar la intuición y tratar la docencia como una disciplina basada en evidencia, desplazando el enfoque tradicional centrado en la sintaxis hacia la construcción explícita de modelos mentales. Para lograrlo, enfatiza que los instructores deben mitigar conscientemente su propio punto ciego de experto mediante la reducción de la carga cognitiva del aprendiz, utilizando la codificación en vivo (como más adelante se verá), la retroalimentación formativa frecuente y el aprendizaje entre pares para diagnosticar errores conceptuales antes de avanzar a la implementación técnica.
 
-Este enfoque pedagógico se potencia de manera rigurosa al estructurar las capacitaciones bajo la metodología instruccional del estándar de competencia EC0366 en México, el cual garantiza el diseño sistemático de cursos en línea mediante objetivos medibles, secuencias didácticas validadas y guías de evaluación alineadas. De este modo, la evidencia cognitiva propuesta por Wilson se traduce en una arquitectura instruccional estandarizada que asegura la efectividad del aprendizaje y el cumplimiento de altos criterios de calidad profesional.
+Este enfoque pedagógico también se puede potenciar de manera rigurosa al estructurar las capacitaciones bajo la metodología instruccional del estándar de competencia EC0366 en México, el cual garantiza el diseño sistemático de cursos en línea mediante objetivos medibles, secuencias didácticas validadas y guías de evaluación alineadas. De este modo, la evidencia cognitiva propuesta por Wilson se traduce en una arquitectura instruccional estandarizada que asegura la efectividad del aprendizaje o el cumplimiento de altos criterios de calidad profesional.

@@ -1,4 +1,4 @@
-# Chasis de Curso: GEOCHIP-R   
+# Ejemplo: Curso GEOCHIP-R   
 ___
 
 Estructurarémos un curso que llamado **GEOCHIP-R** a partir de cinco "temas" princiales y respetando las estrictas reglas de jerarquía y nomenclatura de _Swirlify_ (sin tildes, sin espacios, usando `snake_case` o `PascalCase`). Nuestro directorio raíz debe inicializarse de la siguiente manera:  
@@ -34,7 +34,7 @@ GEOCHIP_R/
 ```
 A continuación, se desglosa la intervensión de cada archivo en el sistema, utilizando como plantilla la primera leccion del tema no.1 denominado: _"El estándar simple feature y el paquete sf"_. 
 
-### 1. Nivel de la raíz del curso
+### 2.2.1 Nivel de la raíz del curso
 
 - **`MANIFEST`**: Solo lleva texto plano dictando el orden exacto en el que _Swirlify_ le mostrará el menú de lecciones al aprendiz.
 ```txt
@@ -45,7 +45,7 @@ Analisis_espacial_raster
 Cartografia_y_visualizacion
 ```
 
-### 2. Nivel de subcarpeta (p.ej. `Modelos_de_datos_espaciales_en_R/`)
+### 2.2.2 Nivel de subcarpeta
 
 - **`lesson.yaml`**: Lleva los metadatos de apertura de la lección y los "esqueletos" de las unidades interactivas (las clases de _Swirlify_), enfocadas únicamente en el. Sin meter el contenido pedagógico, la estructura sería:
 ```yaml
@@ -100,7 +100,5 @@ mi_test_para_subtema_1 <- function() {
 }
 ```
 Repitiendo esta matriz limpia y vacía para los cinco temas y enfocando cada YAML en su respectivo subtema, tendríamos el chasis del curso **GEOCHIP-R** completamente listo y blindado para arrancar con Swirlify.
-
-!!! info "info"
 
     
