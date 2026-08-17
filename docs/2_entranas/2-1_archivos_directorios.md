@@ -2,14 +2,16 @@ Todo el mundo quiere saltar directamente a la sala de operaciones, sin saber siq
 
 !!! warning
 
-    _Antes de avanzar es importante diferenciar dos conceptos, swirl y Swirlify. Por un lado **swirl** es el paquete de R que el aprendiz installa y su trabajo es correr en la consola, leer los archivos de la lección, presentar las preguntas, evaluar respuestas; Swirlify, como ya hemos venido diciendo, es el paquete donde los creadores e instructores redactamos los archivos lesson.yaml, initLesson.R, dependson.txt... Dicho de otra forma swirlify crea la enfermedad (la lección) y swirl la padece (el aprendiz la toma)._
+    _Antes de avanzar es importante diferenciar dos conceptos, swirl y Swirlify. Por un lado **swirl** es el paquete de R que el aprendiz installa y su trabajo es correr en la consola, leer los archivos de la lección, presentar las preguntas, evaluar respuestas; **Swirlify**, como ya hemos venido diciendo, es el paquete donde los creadores e instructores redactamos los archivos lesson.yaml, initLesson.R, dependson.txt... Dicho de otra forma Swirlify crea la enfermedad (la lección) y swirl la padece (el aprendiz la toma)._
 
 
 # 2.1 Estructura de archivos y directorios de Swirlify. 
 ___
-En _Swirlify_, la organización de carpetas y archivos tiene que seguir un estándar estricto para garantizar que la lección sea ejecutada, correctamente validada mediante `test_lesson()` y empaquetada para llegar a los aprendices ().             
+En ***Swirlify***, la organización de carpetas y archivos tiene que seguir un estándar estricto para garantizar que la lección sea ejecutada, correctamente validada mediante `test_lesson()` y empaquetada para llegar a los aprendices (Swirl Development Team, s.f.).             
 
-Así, un curso de _Swirlify_ contiene una carpeta raíz con el nombre del curso, dentro de la cual se ubica una carpeta por cada lección, junto con archivos globales de control. Dibujemos esto con crayolas:
+Así, un curso de _Swirlify_ contiene una carpeta raíz con el nombre del curso, dentro de la cual se ubica una carpeta por cada lección, junto con archivos globales de control.  
+
+Dibujemos esto con crayolas:
 
 ```bash
 Mi_Curso/
@@ -38,7 +40,7 @@ Este es el corazón de la lección en  _Swirlify_. Es el archivo de metadatos y 
 
 - **Requisito YAML:** Sensible a la indentación; usa espacios, si usas (tabs) en lugar de espacios, o si la alineación está mal por un milímetro, todo se viene abajo.
 - **El manejo de comillas y caracteres especiales**: Como los textos de las preguntas y respuestas van dentro de YAML, un apóstrofe mal escapado o unas comillas mal cerradas arruinan el análisis sintáctico del archivo (`yaml::yaml.load_file` se va a quejar y con toda razón).
-- **La correspondencia entre clases (Class:)**: Cada paso en el lesson.yaml tiene un tipo (ej. `cmd_question`, `text, mult_question`). Si declaras mal la clase o esperas una entrada de texto cuando el sistema busca una evaluación de código de _R_, la lección colapsa.
+- **La correspondencia entre clases (Class:)**: Cada bloque en el `lesson.yaml` tiene un tipo de clase (ej. `cmd_question`, `text, mult_question`). Si se declara mal a la clase, lección colapsa.
 
 ```yaml
 - Class: meta
@@ -49,19 +51,19 @@ Este es el corazón de la lección en  _Swirlify_. Es el archivo de metadatos y 
   Organization: Tu Organización
   Version: 2.5
 ```  
-!!! quote "Swirlify ()"
+!!! quote "Swirlify (Swirl Development Team)"
 
-    _Una **clase** en Swirlify es el tipo de bloque estructural que define cómo se comportará un paso específico dentro de tu archivo lesson.yaml. Le dice al motor de swirl exactamente qué herramienta debe utilizar, qué interfaz mostrar en la consola de R (si texto plano, una pregunta interactiva, la evaluación de código de R, una opción múltiple, etc.) y cómo debe evaluar la respuesta del alumno._
+    _"Una **clase** en Swirlify es el tipo de bloque estructural que define cómo se comportará un paso específico dentro de tu archivo lesson.yaml. Le dice al motor de swirl exactamente qué herramienta debe utilizar, qué interfaz mostrar en la consola de R (texto plano, una pregunta interactiva, la evaluación de código de R, una opción múltiple, etc.) y cómo debe evaluar la respuesta del aprendiz"._
 
 Existen todas estas clases, son nueve en total: `meta`, `text`, `multi_question`, `cmd_question`, `figure`, `video`, `exact_question`, `range_question`, `script`.    
 
 !!! danger "Peligro"
 
-    _Siempre, sin excepciones, sin excusas y sin berrinches, debemos existcrear un bloque con la clase meta al inicio absoluto de cada archivo lesson.yaml. Si omitimos la clase, estaremos intentando operar a un paciente sin anestesia ni expediente clínico: el sistema se desploma, rechaza el archivo y te arroja un error._
+    _Siempre, sin excepciones, sin excusas y sin berrinches, debemos insertar un bloque con la clase **meta** al inicio absoluto de cada archivo lesson.yaml. Si omitimos la clase, estaremos intentando operar a un paciente sin anestesia ni expediente clínico: el sistema se desploma, rechaza el archivo y te arroja un error._
 
 
 #### B. `initLesson.R`
-Cuando swirl ejecuta una lección, a veces necesita preparar el terreno en la sesión de _R_ del aprendiz antes de que empiece a responder preguntas: cargar conjuntos de datos específicos, definir variables personalizadas, o limpiar el entorno para que el paciente no arrastre errores de diagnósticos anteriores.  
+Cuando _swirl_ ejecuta una lección, a veces necesita preparar el terreno en la sesión de _R_ del aprendiz antes de que empiece a responder preguntas: cargar conjuntos de datos específicos, definir variables personalizadas, o limpiar el entorno para que el paciente no arrastre errores de diagnósticos anteriores.  
 
 ```r
 # Función auxiliar obligatoria para resolver la ruta del curso
@@ -81,7 +83,7 @@ mis_datos <- read.csv(file.path(.get_course_path(),
 Como este archivo es un script de _R_ común y corriente, significa que en teoría se puede introducir cualquier código que soporte el lenguaje. Pero el hecho de que **podamos hacerlo no significa que debdebamos hacerlo**.
 
 <p style="margin-left: 2em; margin-top: 0; margin-bottom: 0;">
-  <i>Imagina que a un colega tuyo (igual de imprudente) se le ocurre la brillante idea de incluir una línea dentro de <code>initLesson.R</code> que borre todos los archivos del directorio de trabajo del usuario para "empezar limpio", o bien, que intente instalar un paquete pesado de CRAN en cada inicio de lección.</i>
+  <i>(p.ej. )Imagina que a un colega tuyo (imprudentemente) se le ocurre la brillante idea de incluir una línea dentro de <code>initLesson.R</code> que borre todos los archivos del directorio de trabajo del usuario para "empezar limpio", o bien, que intente instalar un paquete pesado de CRAN en cada inicio de lección.</i>
 </p>
 
 !!! Nota
@@ -99,15 +101,15 @@ Estos son algunos límites y prohibiciones que debemos tener en cuenta dentro de
 - **Tener cuidado con los tiempos de carga**: Si ponemos a _R_ a leer un archivo CSV de gigabytes o a entrenar un modelo de machine learning complejo cada vez que se inicia la lección, el usuario se aburrirá y cerrará la consola. Hay que mantener la carga ligera y rápida.
     
 #### C. `dependson.txt`
-En _Swirlify_, este archivo de texto plano enumera las dependencias de paquetes de _R_ necesarios para la lección. Es la lista de medicamentos y herramientas previas que el paciente necesita tener en su sistema antes de entrar a la sala de operaciones.
-
-Su único propósito es declarar qué paquetes de CRAN, GitHub u otros repositorios deben estar instalados obligatoriamente en el entorno de _R_ del aprendiz para que la lección no colapse a mitad del proceso. Si una lección requiere funciones de `ggplot2`, `dplyr` o `tidyr`, y el usuario no los tiene instalados, _swirl_ se detendrá de golpe. `dependson.txt` le avisa al sistema (y al usuario) qué debe inyectar en el entorno antes de arrancar.
+En _Swirlify_, este archivo de texto plano enumera las dependencias de paquetes de _R_ necesarios para la lección. Es la lista de medicamentos y herramientas previas que el cirujano necesita tener en su quirófano antes de operar.  
 
 ```txt
 dplyr
 ggplot2
 tidyr
 ``` 
+Su único propósito es declarar qué paquetes de CRAN, GitHub u otros repositorios deben estar instalados obligatoriamente en el entorno de _R_ del aprendiz para que la lección no colapse a mitad del proceso. Si una lección requiere funciones de `ggplot2`, `dplyr` o `tidyr`, y el usuario no los tiene instalados, _swirl_ se detendrá de golpe. `dependson.txt` le avisa al sistema (y al usuario) qué debe inyectar en el entorno antes de arrancar.
+
 Al igual que en `initLesson.R`, como buen cirujano, debemos de tener cuidado con lo que recetamos.  
 
 - **No incluyas paquetes base de _R_**: Paquetes como `base`, `stats`, `utils` o `graphics` vienen preinstalados con _R_.    
@@ -115,7 +117,7 @@ Al igual que en `initLesson.R`, como buen cirujano, debemos de tener cuidado con
 - **Mantén la lista al mínimo estricto**: Evitemos colocalr una lista de 50 paquetes "por si acaso". Solo hay que declara aquello que la lección vaya a utilizar de manera imperativa. Menos ruido, menos fallos.  
 
 #### D. `customTests.R`
-Si no quieres solamente usar pruebas de validación estándar que vienen por defecto en _swirl_ y quieres evaluar algo verdaderamente retorcido en el código de un aprendiz: _"¿quieres verificar si el aprendiz creó un gráfico con capas específicas en ggplot2?"; "¿si estructuró un objeto de datos de una forma impía o si calculó una varianza usando una función prohibida?"_... para eso sirve `customTests.R`.  
+Si no quieres solamente usar pruebas de validación estándar que vienen por defecto en _swirl_ y quieres evaluar algo verdaderamente retorcido en el código de un aprendiz: _"¿quieres verificar si el aprendiz creó un gráfico con capas específicas en ggplot2?"; "¿si estructuró un objeto de datos de una forma limpía o si calculó una varianza usando una función prohibida?"_... para eso sirve `customTests.R`.  
 
 Este script **opcional** se aloja en la carpeta de la lección. Cada función que definamos aquí puede ser llamada desde el archivo `lesson.yaml` en el campo `AnswerTests` para evaluar las entradas del paciente con la precisión de un bisturí láser.
 
@@ -142,7 +144,7 @@ test_resultado_positivo <- function() {
 ### 2.1.2 Carpetas y Archivos Especiales de Swirlify
 
 #### A. `MANIFEST`
-Pensemos en este archivo como el inventario instrumental dem un quirófano. Cuando _swirl_ empaqueta una lección para distribuirla (o cuando _Swirlify_ la prepara para su exportación), el sistema necesita saber exactamente qué archivos forman parte de esa lección (el archivo YAML, scripts auxiliares, conjuntos de datos CSV, imágenes, entre otros). El archivo `MANIFEST` es un simple archivo de texto plano que contiene la lista de todos los archivos que deben incluirse en el paquete comprimido de la lección (`.swirl`). Si un archivo secundario existe en la carpeta pero no está declarado en el `MANIFEST`, _swirl_ lo ignorará por completo y tu lección llegará incompleta al paciente.
+Pensemos en este archivo como una lista de asistencia. Cuando _swirl_ empaqueta una lección para distribuirla (o cuando _Swirlify_ la prepara para su exportación), el sistema necesita saber exactamente qué archivos forman parte de esa lección (el archivo YAML, scripts auxiliares, conjuntos de datos CSV, imágenes, entre otros). El archivo `MANIFEST` es un simple archivo de texto plano que contiene la lista de todos los archivos que deben incluirse en el paquete comprimido de la lección (`.swirl`). Si un archivo secundario existe en la carpeta pero no está declarado en el `MANIFEST`, _swirl_ lo ignorará por completo y tu lección llegará incompleta al aprendiz.
 
 ```txt
 lesson.yaml
@@ -155,7 +157,7 @@ Aspectos críticos que debemos cuidar:
 
 - **Rutas relativas declaradas**: Los nombres de los archivos en el `MANIFEST` deben coincidir exactamente con lo que hay en la carpeta de la lección. Si escribimos mal una letra o una extensión (ej. `.CSV` en lugar de `.csv`), el empaquetador fallará.  
 
-- **Olvidar actualizarlo**: Cada vez que agreguemos un nuevo dataset, un gráfico o un script de soporte a la lección, debemos registrarlo aquí. Si nos olvidasmos de actualizarlo, el alumno intentará cargar un archivo que nunca viajó en el paquete. 
+- **Olvidar actualizarlo**: Cada vez que agreguemos un nuevo dataset, un gráfico o un script de soporte a la lección, debemos registrarlo aquí. Si nos olvidasmos de actualizarlo, el aprendiz intentará cargar un archivo que nunca viajó en el paquete. 
 
 #### B. Carpeta de scripts
 
@@ -163,14 +165,14 @@ En la anatomía de una lección de _Swirlify_, la carpeta llamada textualmente `
 
 A diferencia de `initLesson.R` (que se ejecuta de manera invisible y automática al arrancar la lección) o de los ejercicios que el alumno resuelve en la consola, los archivos que metes dentro de la carpeta scripts sirven como plantillas, scripts de ejemplo o fragmentos de código complementarios que el alumno puede abrir en su propio editor de texto (como RStudio) para analizarlos en paralelo mientras avanza en la lección.
 
-_-"¿Es obligatoria?"-_ **Absolutamente NO**. Si la lección es puramente interactiva en la consola o basada en preguntas de opción múltiple y texto, la carpeta scripts brilla por su ausencia y nadie va a morir, todo dependerá del diseño instruccional del cirujano.
+_-"¿Es obligatoria?"-_ **Absolutamente NO**. Si la lección es puramente interactiva en la consola o basada en preguntas de opción múltiple y texto, la carpeta scripts brilla por su ausencia y nadie va a morir, todo dependerá del diseño instruccional del facilitador.
 
 <p style="margin-left: 2em; margin-top: 0; margin-bottom: 0;">
   <i>(p.ej.) Cuando queremos enseñar buenas prácticas de formato, cómo estructurar un archivo de análisis de datos complejo, o cómo funciona un flujo de trabajo con múltiples funciones que no caben en una sola línea de comando de la consola interactiva.</i>
 </p>
 
 ### 2.1.3 Lógica de Ejecución del Motor (swirl Engine)  
-El motor de `swirl` procesa el archivo `lesson.yaml` secuencialmente como un autómata de estados. Es decir, `swirl` funciona como una máquina paso a paso: se detiene en cada bloque de `lesson.yaml`, evalúa lo que el usuario ingresa en la consola, y solo cuando se cumple la condición de validación "avanza de estado" al siguiente bloque del archivo.  
+El motor de `swirl` procesa el archivo `lesson.yaml` secuencialmente como un autómata de estados. Es decir, `swirl` funciona como una máquina paso a paso: se detiene en cada bloque de `lesson.yaml`, evalúa lo que el usuario ingresa en la consola, y solo cuando se cumple la condición de validación "avanza de estado",  al siguiente bloque del archivo.  
 
 ```txt
 [Inicio] -> Ejecuta initLesson.R -> Carga dependson.txt
@@ -194,6 +196,7 @@ El motor de `swirl` procesa el archivo `lesson.yaml` secuencialmente como un aut
   │                            ├── TRUE  -> Muestra éxito -> Siguiente
   │                            └── FALSE -> Muestra Hint -> Reintenta
 ```   
+___
 
 **Resumen de Reglas de Nomenclatura Técnica**
 
