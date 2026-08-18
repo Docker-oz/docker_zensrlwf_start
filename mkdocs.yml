@@ -25,9 +25,9 @@ extra_css:
 nav:
   - Bienvenida: index.md
   - Presentación: presentacion.md
-  - 'P1. Modelos Mentales':        # Este será el título del menú desplegable
+  - 'P1. Los cimientos cognitivos':        # Este será el título del menú desplegable
       - 1.1 ¿Quiénes son tus aprendices?: 1_modelos_mentales/1-1_quienes_son_mis_aprendices.md
       - 1.2 La mente del aprendiz: 1_modelos_mentales/1-2_la_mente_del_aprendiz.md
-  - 'P2. Las entrañas de Swirlify': 
+  - 'P2. El laboratorio técnico': 
       - 2.1 Tuerca, tornillo y archivo: 2_entranas/2-1_archivos_directorios.md
       - 2.2 Chasis de un curso: 2_entranas/2-2_geochip-r.md
