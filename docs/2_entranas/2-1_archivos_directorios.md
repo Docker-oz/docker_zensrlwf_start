@@ -1,6 +1,6 @@
 Todo el mundo quiere saltar directamente a la sala de operaciones, sin saber siquiera qué es un bisturí. Bien, en esta sección reconoceremos primero como hay que construir los pilares que sostienen cualquier experiencia didáctica de _Swirlify_. 
 
-!!! warning
+!!! warning "Alto"
 
     _Antes de avanzar es importante diferenciar dos conceptos, swirl y Swirlify. Por un lado **swirl** es el paquete de R que el aprendiz installa y su trabajo es correr en la consola, leer los archivos de la lección, presentar las preguntas, evaluar respuestas; **Swirlify**, como ya hemos venido diciendo, es el paquete donde los creadores e instructores redactamos los archivos lesson.yaml, initLesson.R, dependson.txt... Dicho de otra forma Swirlify crea la enfermedad (la lección) y swirl la padece (el aprendiz la toma)._
 
