@@ -222,7 +222,9 @@ Aquí es donde entra el vocabulario técnico formal: cada una de estas clases ti
         </br>
         _En esta primera sesión, no se abordan otros elementos como las funciones para la gestión interna de archivos en R u operaciones espaciales como **st_buffer(sf_proj, dist = 100)**. Por eso es importante planear el número de sesiones necesarias para ir introduciendo el nuevo conocimiento de manera escalonada._
 
+
 ### Conclusión
+___
 Greg Wilson concluye que enseñar programación de forma efectiva exige abandonar la intuición y tratar la docencia como una disciplina basada en evidencia, desplazando el enfoque tradicional centrado en la sintaxis hacia la construcción explícita de modelos mentales. Para lograrlo, enfatiza que los instructores deben mitigar conscientemente su propio punto ciego de experto mediante la reducción de la carga cognitiva del aprendiz, utilizando la codificación en vivo (como más adelante se verá), la retroalimentación formativa frecuente y el aprendizaje entre pares para diagnosticar errores conceptuales antes de avanzar a la implementación técnica.
 
 Este enfoque pedagógico también se puede potenciar de manera rigurosa al estructurar las capacitaciones bajo la metodología instruccional del estándar de competencia EC0366 en México, el cual garantiza el diseño sistemático de cursos en línea mediante objetivos medibles, secuencias didácticas validadas y guías de evaluación alineadas. De este modo, la evidencia cognitiva propuesta por Wilson se traduce en una arquitectura instruccional estandarizada que asegura la efectividad del aprendizaje o el cumplimiento de altos criterios de calidad profesional.

@@ -23,7 +23,7 @@ Mi sincero reconocimiento a todos los profesionales de la educación y a quienes
 Es una herramienta para _instructores_, por así decirlo. Permite construir lecciones que tengan una forma de aprendizaje **activa** y no **pasiva**, bajo la idea de democratizar la creación de cursos de ***R***.
 
 
-!!! Quote "swirlify Docs (2025, Introduction)"
+!!! Quote "Swirlify (Swirl Development Team)"
 
     _**"Si alguien puede escribir un script de R, puede crear una lección"...**_
 
@@ -31,7 +31,7 @@ Es una herramienta para _instructores_, por así decirlo. Permite construir lecc
 
 Los aprendices son guiados a través de ejercicios de programación de ***R*** donde pueden responder preguntas en su consola. Todo utilizando el paquete `swirl` para que la creación de cursos sea simple y su ejecución, interactiva.
 
-!!! Quote "swirlify Docs (2025, Introduction)"
+!!! Quote "Swirlify (Swirl Development Team)"
     _**“Esto es crucial porque, a diferencia de los libros o videos, obliga al usuario a escribir código y a enfrentar sus errores en el momento"**_
 
 Para la documentación completa [swirlify Docs](https://swirlstats.com/swirlify/).
@@ -63,8 +63,10 @@ La mejor forma de dominar una herramienta es viéndola en acción. Por ello, la 
 
 **Fuentes:**
 
-1. Carpentries-ES. (s.f.). Convenciones de Traducción. GitHub. Recuperado el [Fecha de Acceso: ej., 26 de noviembre de 2025] de https://github.com/Carpentries-ES/board/blob/master/Convenciones_Traduccion.md
+1. Carpentries-ES. (s.f.). Convenciones de Traducción. GitHub. Recuperado el 26 de noviembre de 2025, de https://github.com/Carpentries-ES/board/blob/master/Convenciones_Traduccion.md
 
-2. *Introduction*. (2025). Swirlstats.com. Recuperado el 6 de agosto de 2025, de [https://swirlstats.com/swirlify/introduction.html](https://swirlstats.com/swirlify/introduction.html)
+2. *Introduction*. (2025). Swirlstats.com. Recuperado el 6 de agosto de 2025, de https://swirlstats.com/swirlify/introduction.html
 
-3. Wilson, G. (s.f.). Enseñar tecnología juntos (Teaching Tech Together). Recuperado el [Fecha de Acceso: ej., 26 de noviembre de 2025] de https://teachtogether.tech/es/#
+3. Wilson, G. (s.f.). Enseñar tecnología juntos (Teaching Tech Together). Recuperado el 26 de noviembre de 2025, de https://teachtogether.tech/es/#
+
+4. Welcome to swirlify! (s/f). Swirlstats.com. Recuperado el 18 de agosto de 2026, de https://swirlstats.com/swirlify/
