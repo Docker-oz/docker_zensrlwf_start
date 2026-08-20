@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+/* Solo para presentacion.md: contenido envuelto en <div class="nothing-you-could-do-page"> */
+.md-typeset .nothing-you-could-do-page,
+.md-typeset .nothing-you-could-do-page h1,
+.md-typeset .nothing-you-could-do-page h2,
+.md-typeset .nothing-you-could-do-page h3,
+.md-typeset .nothing-you-could-do-page h4,
+.md-typeset .nothing-you-could-do-page h5,
+.md-typeset .nothing-you-could-do-page h6,
+.md-typeset .nothing-you-could-do-page p {
+  font-family: "Nothing You Could Do", cursive !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6,
+.md-content h1,
+.md-content h2,
+.md-content h3,
+.md-content h4,
+.md-content h5,
+.md-content h6 {
+  font-family: "Sansita Swashed", system-ui !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+}
+
 .md-content {
   text-align: justify;
+}
+
+/* Solo para index.md: "ATTE.: olivinöz" marcado con {: .nothing-you-could-do-regular } */
+.md-typeset strong.nothing-you-could-do-regular {
+  font-family: "Nothing You Could Do", cursive !important;
+  font-size: 26px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
 }

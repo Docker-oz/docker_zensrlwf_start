@@ -33,7 +33,8 @@ Es una herramienta para _instructores_, por así decirlo. Permite construir lecc
 Los aprendices avanzan mediante ejercicios prácticos de **_R_** ejecutados directamente en su consola, lo que les permite responder preguntas y recibir una evaluación inmediata. De este modo, la experiencia de aprendizaje trasciende la simple recepción pasiva de contenidos.
 
 !!! Quote "Swirlify (Swirl Development Team)"
-_Esto es crucial porque, a diferencia de los libros o videos, obliga al usuario a escribir código y a enfrentar sus errores en el momento_
+
+    _Esto es crucial porque, a diferencia de los libros o videos, obliga al usuario a escribir código y a enfrentar sus errores en el momento_
 
 Para la documentación completa [swirlify Docs](https://swirlstats.com/swirlify/).
 
